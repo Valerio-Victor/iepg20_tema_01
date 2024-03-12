@@ -74,12 +74,11 @@ knitr::include_graphics(
 ---
 <div style="text-align: justify">
 ## PRINCIPAIS INFORMAÇÕES
-- **Nome:** *Victor Valerio*;
-- **E-mail:** *victor.dmv@unifei.edu.br*;
-- **Tel:** *+55 (35) 3629-1151*
-- **Sala:** *B.3216 (1º Piso IEPG);*
-- **Grupo de WhatsApp:** 
-[_INGRESSE NO GRUPO CLICANDO AQUI_](https://chat.whatsapp.com/GFFjHxSqhHFIjl2Vj96PQr)
+
+- **NOME:** *Victor Valerio*;
+- **E-MAIL:** *victor.dmv@unifei.edu.br*;
+- **TEL:** *+55 (35) 3629-1151*
+- **SALA:** *B.3216 (1º Piso IEPG);*
 
 ---
 <div style="text-align: justify">
@@ -135,7 +134,7 @@ knitr::include_graphics(
 
 ---
 <div style="text-align: justify">
-## PERGUNTAS A SEREM RESPONDIDAS POR CADA ESTUDANTE
+## PERGUNTAS PARA OS ESTUDANTES
 
 - Qual o seu nome?
 - Você se matricularia se não fosse obrigatória?
@@ -229,7 +228,7 @@ knitr::include_graphics(
 
     - Para atendimento pessoal basta utilizar o seguinte link: 
     
-    - [**https://valerio-victor.github.io/agenda**](https://valerio-victor.github.io/agenda)
+    - [**https://profvictorunifei.shinyapps.io/agenda**](https://profvictorunifei.shinyapps.io/agenda)
     
     - O agendamento deverá ocorrer com 4 dias de antecedência, não é necessário solicitar e não é necessário avisar.
 
@@ -239,13 +238,24 @@ knitr::include_graphics(
 
 - Há ainda mais um instrumento de interação, criei um grupo no whatsapp (acho o mais dinâmico de todos). 
 Por favor, ingresse no grupo! Basta clicar neste 
-[**link**](https://chat.whatsapp.com/GFFjHxSqhHFIjl2Vj96PQr)! Obviamente, sua entrada é facultativa!
+[**link**](https://chat.whatsapp.com/JDiTsGrkwbdLg4NrGFtqIv)! Obviamente, sua entrada é facultativa!
 
 
 ```{r, echo = F, fig.align = 'center', out.width = '50%'}
 knitr::include_graphics(
   'https://media.giphy.com/media/l2JebaQTHOUAIarQc/giphy.gif')
 ```
+
+---
+<div style="text-align: justify">
+## COMO OS ATENDIMENTOS SERÃO ORGANIZADOS?
+
+```{r, echo = F, fig.align = 'center', out.width = '50%', fig.alt= 'gif com uma reunião de vizinhos da família do homer'}
+knitr::include_graphics(
+  'whatsapp.jpg')
+```
+]
+
 
 ---
 class: inverse, center, middle
@@ -281,12 +291,20 @@ library(kableExtra)
 
 cronograma <- data.frame(
   SEMANA = c(1, 2, 3, 4, 5, 6, 7, 8),
-  ÁREA = c('------', '------',
+  DATA = c(format(Sys.Date(),"%d-%m-%Y"),
+           format(Sys.Date()+(7*1),"%d-%m-%Y"),
+           format(Sys.Date()+(7*2),"%d-%m-%Y"),
+           format(Sys.Date()+(7*3),"%d-%m-%Y"),
+           format(Sys.Date()+(7*4),"%d-%m-%Y"),
+           format(Sys.Date()+(7*5),"%d-%m-%Y"),
+           format(Sys.Date()+(7*6),"%d-%m-%Y"),
+           format(Sys.Date()+(7*7),"%d-%m-%Y")),
+  ÁREA = c('------', 'Metodologia',
            'Macroeconomia', 'Macroeconomia',
            'Macroeconomia','Macroeconomia',
            'Macroeconomia','Macroeconomia'),
-  TEMAS = c('------',
-           'Apresentação da Disciplina', 
+  TEMAS = c('Apresentação da Disciplina',
+           'Método de Pesquisa em Economia', 
            'Taxa de Inflação', 
            'Taxa de Câmbio',
            'Taxa de Juros',
@@ -311,18 +329,26 @@ library(kableExtra)
 
 cronograma <- data.frame(
   SEMANA = c(9, 10, 11, 12, 13, 14, 15, 16),
+  DATA = c(format(Sys.Date()+(7*8),"%d-%m-%Y"),
+           format(Sys.Date()+(7*9),"%d-%m-%Y"),
+           format(Sys.Date()+(7*10),"%d-%m-%Y"),
+           format(Sys.Date()+(7*11),"%d-%m-%Y"),
+           format(Sys.Date()+(7*12),"%d-%m-%Y"),
+           format(Sys.Date()+(7*13),"%d-%m-%Y"),
+           format(Sys.Date()+(7*14),"%d-%m-%Y"),
+           format(Sys.Date()+(7*15),"%d-%m-%Y")),
   ÁREA = c('Microeconomia', 'Microeconomia',
            'Microeconomia', 'Microeconomia',
            'Microeconomia','Microeconomia',
            'Microeconomia','Microeconomia'),
-  TEMAS = c('Identidades Macroeconômicas',
+  TEMAS = c('Tópicos de Cálculo',
             'Preferências do Consumidor', 
             'Funções Utilidade e Escolha Ótima', 
-            'Otimização da Produção no Curto Prazo',
-            'Otimização da Produção no Longo Prazo', 
+            'Otimização da Produção - CP',
+            'Otimização da Produção - LP', 
             'Equilíbrio de Mercado',
-            'Dúvidas', 
-            'Prova 02'))
+            'Prova 02', 
+            'Prova Substitutiva'))
 
 knitr::kable(cronograma, 
              escape = FALSE,
