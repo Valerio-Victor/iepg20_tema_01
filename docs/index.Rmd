@@ -94,7 +94,7 @@ knitr::include_graphics(
 <div style="text-align: justify">
 ## ÁREAS DE ATUAÇÃO
 
-- **DOCÊNCIA**: Economia (IEPG20), Engenharia Econômica (EPR502), 	
+- **DOCÊNCIA**: Economia (IEPG20), Engenharia Econômica (IEPG10), 	
 Macroeconomia (ADM022), Análise 	de 	Investimento com Risco (ADM013), 
 Metodologia Quantitativa em Administração (MPA033);
 
@@ -292,13 +292,13 @@ library(kableExtra)
 cronograma <- data.frame(
   SEMANA = c(1, 2, 3, 4, 5, 6, 7, 8),
   DATA = c(format(Sys.Date(),"%d-%m-%Y"),
+           format(Sys.Date()+(7*1),"%d-%m-%Y"),
            format(Sys.Date()+(7*2),"%d-%m-%Y"),
            format(Sys.Date()+(7*3),"%d-%m-%Y"),
            format(Sys.Date()+(7*4),"%d-%m-%Y"),
            format(Sys.Date()+(7*5),"%d-%m-%Y"),
            format(Sys.Date()+(7*6),"%d-%m-%Y"),
-           format(Sys.Date()+(7*7),"%d-%m-%Y"),
-           format(Sys.Date()+(7*8),"%d-%m-%Y")),
+           format(Sys.Date()+(7*7),"%d-%m-%Y")),
   ÁREA = c('------', 'Metodologia',
            'Macroeconomia', 'Macroeconomia',
            'Macroeconomia','Macroeconomia',
@@ -329,11 +329,11 @@ library(kableExtra)
 
 cronograma <- data.frame(
   SEMANA = c(9, 10, 11, 12, 13, 14, 15, 16),
-  DATA = c(format(Sys.Date()+(7*9),"%d-%m-%Y"),
+  DATA = c(format(Sys.Date()+(7*8),"%d-%m-%Y"),
+           format(Sys.Date()+(7*9),"%d-%m-%Y"),
            format(Sys.Date()+(7*10),"%d-%m-%Y"),
            format(Sys.Date()+(7*11),"%d-%m-%Y"),
            format(Sys.Date()+(7*12),"%d-%m-%Y"),
-           format(Sys.Date()+(7*13),"%d-%m-%Y"),
            format(Sys.Date()+(7*14),"%d-%m-%Y"),
            format(Sys.Date()+(7*15),"%d-%m-%Y"),
            format(Sys.Date()+(7*16),"%d-%m-%Y")),
