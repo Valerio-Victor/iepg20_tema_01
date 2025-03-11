@@ -341,7 +341,7 @@ cronograma <- data.frame(
   ÁREA = c('Microeconomia', 'Microeconomia',
            'Microeconomia', 'Microeconomia',
            'Microeconomia','Microeconomia',
-           'Microeconomia','Microeconomia'),
+           'Microeconomia','Tudo'),
   TEMAS = c('Preferências do Consumidor',
             'Funções Utilidade', 
             'Escolha Ótima', 
