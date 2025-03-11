@@ -18,6 +18,7 @@ output:
 # PACOTES UTILIZADOS: ----
 library(xaringanthemer)
 library(xaringanExtra)
+library(htmltools)
 
 # CONFIGURAÇÃO DA FONTE: ----
 style_mono_light(base_color = '#1c5253',
