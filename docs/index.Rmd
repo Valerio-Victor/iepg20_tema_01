@@ -285,7 +285,7 @@ knitr::include_graphics(
   introdutória, todas estas áreas de atuação serão abordadas na disciplina. 
 
 ---
-## QUAIS OS CONTEÚDOS?
+## QUAIS OS CONTEÚDOS? (TURMA DE TERÇA)
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
 library(magrittr)
 library(kableExtra)
@@ -323,7 +323,7 @@ knitr::kable(cronograma,
 ```
 
 ---
-## QUAIS OS CONTEÚDOS?
+## QUAIS OS CONTEÚDOS? (TURMA DE TERÇA)
 ```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
 library(magrittr)
 library(kableExtra)
@@ -359,6 +359,97 @@ knitr::kable(cronograma,
   kable_styling(bootstrap_options = 'striped')
 
 ```
+
+---
+## QUAIS OS CONTEÚDOS? (TURMA DE QUARTA)
+```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
+library(magrittr)
+library(kableExtra)
+
+cronograma <- data.frame(
+  SEMANA = c(1, 2, 3, 4, 5, 6, 7, 8),
+  DATA = c(format(Sys.Date()-7,"%d-%m-%Y"),
+           format(Sys.Date()+(7),"%d-%m-%Y"),
+           format(Sys.Date()+(7*1),"%d-%m-%Y"),
+           format(Sys.Date()+(7*2),"%d-%m-%Y"),
+           format(Sys.Date()+(7*3),"%d-%m-%Y"),
+           format(Sys.Date()+(7*4),"%d-%m-%Y"),
+           format(Sys.Date()+(7*5),"%d-%m-%Y"),
+           format(Sys.Date()+(7*6),"%d-%m-%Y")),
+  ÁREA = c('------', 'Macroeconomia',
+           'Macroeconomia', 'Macroeconomia',
+           'Macroeconomia','Macroeconomia',
+           'Macroeconomia','Macroeconomia'),
+  TEMAS = c('Apresentação da Disciplina',
+           'Taxa de Inflação', 
+           'Taxa de Câmbio',
+           'Taxa de Juros',
+           'Identidades Macroeconômicas',
+           'Nível de Atividade', 
+           'Dúvidas', 
+           'Prova 01'))
+
+knitr::kable(cronograma, 
+             escape = FALSE,
+             format = 'html',
+             align = c('c', 'c', 'c')) %>%
+  
+  kable_styling(bootstrap_options = 'striped')
+
+```
+
+---
+## QUAIS OS CONTEÚDOS? (TURMA DE QUARTA)
+```{r , results = 'asis', echo = F, warning = F, message = F, error = F, fig.align ='center', out.width = '100%'}
+library(magrittr)
+library(kableExtra)
+
+cronograma <- data.frame(
+  SEMANA = c(9, 10, 11, 12, 13, 14, 15, 16),
+  DATA = c(format(Sys.Date()+(7*7),"%d-%m-%Y"),
+           format(Sys.Date()+(7*8),"%d-%m-%Y"),
+           format(Sys.Date()+(7*9),"%d-%m-%Y"),
+           format(Sys.Date()+(7*10),"%d-%m-%Y"),
+           format(Sys.Date()+(7*11),"%d-%m-%Y"),
+           format(Sys.Date()+(7*12),"%d-%m-%Y"),
+           format(Sys.Date()+(7*13),"%d-%m-%Y"),
+           format(Sys.Date()+(7*14),"%d-%m-%Y")),
+  ÁREA = c('Microeconomia', 'Microeconomia',
+           'Microeconomia', 'Microeconomia',
+           'Microeconomia','Microeconomia',
+           'Microeconomia','Tudo'),
+  TEMAS = c('Preferências do Consumidor',
+            'Funções Utilidade', 
+            'Escolha Ótima', 
+            'Otimização da Produção - CP',
+            'Equilíbrio de Mercado', 
+            'Estática Comparativa',
+            'Prova 02', 
+            'Prova Substitutiva'))
+
+knitr::kable(cronograma, 
+             escape = FALSE,
+             format = 'html',
+             align = c('c', 'c', 'c')) %>%
+  
+  kable_styling(bootstrap_options = 'striped')
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 ## COMPOSIÇÃO DAS NOTAS
